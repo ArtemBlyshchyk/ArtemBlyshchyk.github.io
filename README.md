@@ -1,1 +1,1 @@
-# goit-js-hw-06.github.io
+# ArtemBlyshchyk.github.io
