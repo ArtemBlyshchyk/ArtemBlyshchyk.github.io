@@ -13,7 +13,7 @@ const ingredientsList = ingredients.forEach((ingredient) => {
   let listItem = document.createElement("li");
   listItem.classList.add("item");
   listItem.textContent = ingredient;
-  list.append(listItem);
+  list.appendChild(listItem);
 });
 
 // Завдання 2
