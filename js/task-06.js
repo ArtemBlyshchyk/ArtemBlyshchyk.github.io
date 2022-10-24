@@ -25,30 +25,16 @@
 // }
 
 const inputHreff = document.getElementById('validation-input');
-// console.log(inputHreff);
 
 inputHreff.addEventListener('blur', event => {
-  event.preventDefault();
   if(event.currentTarget.value.length === Number(inputHreff.dataset.length)) {
-    if (inputHreff.classList.contains('invalid')) {
       inputHreff.classList.remove('invalid')
-    } else {
       inputHreff.classList.add('valid')
-    }
-  } 
-  if(event.currentTarget.value.length !== Number(inputHreff.dataset.length)) {
-    if (inputHreff.classList.contains('valid')) {
-      inputHreff.classList.remove('valid')
     } else {
       inputHreff.classList.add('invalid')
+      inputHreff.classList.remove('valid')
     }
-  } 
-})
-
-
-
-
-
+  });
 
 
 // const inputEl = document.querySelector('#validation-input');
