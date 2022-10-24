@@ -29,7 +29,7 @@ function onFormSubmit (event) {
     const {elements: 
         {email, password},} = event.currentTarget;
     if (email.value === "" || password.value === "") {
-        alert ("Please, fill in all empty fields!")
+       return alert ("Please, fill in all empty fields!")
     } else {
         const formUserInfo = {
             email: email.value,
